@@ -75,7 +75,7 @@ const ReviewText: React.FC<Props> = ({
     <Card>
       <CardContent>
         <Typography color='textSecondary' gutterBottom>
-          Do you thing the sentiment is correct?
+          Do you think the sentiment is correct?
         </Typography>
         <Grid container spacing={4}>
           <Grid item xs={8} alignItems='center'>
@@ -87,6 +87,9 @@ const ReviewText: React.FC<Props> = ({
             </Typography>
           </Grid>
           <Grid item xs={4}>
+          <Typography color='textSecondary' gutterBottom>
+          Sentiment
+        </Typography>
             {showSentiment(quote.sentiment)}
           </Grid>
         </Grid>
